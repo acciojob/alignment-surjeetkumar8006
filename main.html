@@ -1,152 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Assignment 3</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        table.middle {
-            border: 1px solid black;
-            border-collapse: collapse;
-            margin: 20px auto;
-            width: 80%;
-        }
-
-        table.middle td, table.middle th {
-            border: 1px solid black;
-            padding: 5px;
-            text-align: left;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        .right {
-            text-align: right;
-        }
-
-        .green {
-            background-color: green;
-            color: white;
-        }
-
-        .blue {
-            background-color: blue;
-            color: white;
-        }
-
-        img {
-            width: 150px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Assignment 3</title>
+<style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    h1 { text-align: center; }
+    table.middle { border-collapse: collapse; margin: 20px auto; border: 1px solid black; }
+    table.middle td, table.middle th { border: 1px solid black; padding: 1px; }
+    .center { text-align: center; }
+    .right { text-align: right; }
+    .green { background-color: green; color: white; }
+    .blue { background-color: blue; color: white; }
+    img { display: block; margin: 0 auto; width: 150px; height: auto; }
+</style>
 </head>
 <body>
 
-    <h1>HTML Assignment #3</h1>
+<h1>HTML Assignment #3</h1>
 
-    <!-- Table 1 -->
-    <table class="middle" id="table-1">
-        <tr>
-            <td id="t11">Row1 Col1</td>
-            <td id="t12">Row1 Col2</td>
-            <td id="t13" class="right">Row1 Col3</td>
-        </tr>
-        <tr class="center">
-            <td>Row2 Col1</td>
-            <td>Row2 Col2</td>
-            <td class="right">Row2 Col3</td>
-        </tr>
-        <tr>
-            <td>Row3 Col1</td>
-            <td>Row3 Col2</td>
-            <td class="right">Row3 Col3</td>
-        </tr>
-    </table>
+<!-- Table 1 -->
+<table class="middle" id="table-1">
+    <tr>
+        <td id="t11">R1C1</td>
+        <td id="t12">R1C2</td>
+        <td id="t13" class="right">R1C3</td>
+    </tr>
+    <tr class="center">
+        <td id="t21">R2C1</td>
+        <td id="t22">R2C2</td>
+        <td id="t23" class="right">R2C3</td>
+    </tr>
+    <tr>
+        <td id="t31">R3C1</td>
+        <td id="t32">R3C2</td>
+        <td id="t33" class="right">R3C3</td>
+    </tr>
+</table>
 
-    <!-- Table 2 -->
-    <table class="middle" id="table-2">
-        <tr>
-            <td id="t21" colspan="6" class="center">This is a single cell spanning 6 columns</td>
-        </tr>
-        <tr>
-            <td>R2C1</td>
-            <td>R2C2</td>
-            <td>R2C3</td>
-            <td>R2C4</td>
-            <td>R2C5</td>
-            <td>R2C6</td>
-        </tr>
-        <tr>
-            <td>R3C1</td>
-            <td>R3C2</td>
-            <td>R3C3</td>
-            <td>R3C4</td>
-            <td>R3C5</td>
-            <td>R3C6</td>
-        </tr>
-        <tr>
-            <td>R4C1</td>
-            <td>R4C2</td>
-            <td>R4C3</td>
-            <td>R4C4</td>
-            <td>R4C5</td>
-            <td>R4C6</td>
-        </tr>
-        <tr>
-            <td>R5C1</td>
-            <td>R5C2</td>
-            <td>R5C3</td>
-            <td>R5C4</td>
-            <td>R5C5</td>
-            <td>R5C6</td>
-        </tr>
-        <tr>
-            <td>R6C1</td>
-            <td>R6C2</td>
-            <td>R6C3</td>
-            <td>R6C4</td>
-            <td>R6C5</td>
-            <td>R6C6</td>
-        </tr>
-    </table>
+<!-- Table 2 -->
+<table class="middle" id="table-2">
+    <tr>
+        <td id="t21" colspan="6" class="center">This cell spans 6 columns</td>
+    </tr>
+    <tr>
+        <td>R2C1</td>
+        <td>R2C2</td>
+        <td>R2C3</td>
+        <td>R2C4</td>
+        <td>R2C5</td>
+        <td>R2C6</td>
+    </tr>
+    <tr>
+        <td>R3C1</td>
+        <td>R3C2</td>
+        <td>R3C3</td>
+        <td>R3C4</td>
+        <td>R3C5</td>
+        <td>R3C6</td>
+    </tr>
+    <tr>
+        <td>R4C1</td>
+        <td>R4C2</td>
+        <td>R4C3</td>
+        <td>R4C4</td>
+        <td>R4C5</td>
+        <td>R4C6</td>
+    </tr>
+    <tr>
+        <td>R5C1</td>
+        <td>R5C2</td>
+        <td>R5C3</td>
+        <td>R5C4</td>
+        <td>R5C5</td>
+        <td>R5C6</td>
+    </tr>
+    <tr>
+        <td>R6C1</td>
+        <td>R6C2</td>
+        <td>R6C3</td>
+        <td>R6C4</td>
+        <td>R6C5</td>
+        <td>R6C6</td>
+    </tr>
+</table>
 
-    <!-- Table 3 -->
-    <table class="middle" id="table-3">
-        <!-- First Row: Green -->
-        <tr class="green">
-            <td>Green Row Cell 1</td>
-            <td>Green Row Cell 2</td>
-            <td>Green Row Cell 3</td>
-        </tr>
-
-        <!-- Middle Row: Image -->
-        <tr>
-            <td id="t-image" colspan="3">
-                <img src="https://picsum.photos/200/150" alt="Sample Image">
-            </td>
-        </tr>
-
-        <!-- Last Row: Blue -->
-        <tr class="blue">
-            <td>Blue Row Cell 1</td>
-            <td>Blue Row Cell 2</td>
-            <td>Blue Row Cell 3</td>
-        </tr>
-    </table>
+<!-- Table 3 -->
+<table class="middle" id="table-3">
+    <tr class="green">
+        <td>Green1</td>
+        <td>Green2</td>
+        <td>Green3</td>
+    </tr>
+    <tr>
+        <td id="t-image" colspan="3">
+            <img src="https://picsum.photos/200/150" alt="Sample Image">
+        </td>
+    </tr>
+    <tr class="blue">
+        <td>Blue1</td>
+        <td>Blue2</td>
+        <td>Blue3</td>
+    </tr>
+</table>
 
 </body>
 </html>
