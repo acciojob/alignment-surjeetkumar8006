@@ -20,7 +20,7 @@
     }
     table.middle td, table.middle th {
       border: 1px solid black;
-      padding: 5px;
+      padding: 1px; /* ✅ changed from 5px to 1px */
     }
     .center {
       text-align: center;
@@ -46,12 +46,12 @@
   <table id="table-1" class="middle">
     <tr>
       <td id="t11">Cell 1</td>
-      <td id="t12">Cell 2</td>
+      <td id="t12" class="center">Cell 2</td> <!-- ✅ added center class -->
       <td id="t13" class="right">Cell 3</td>
     </tr>
-    <tr class="center">
-      <td>Cell 4</td>
-      <td>Cell 5</td>
+    <tr>
+      <td class="center">Cell 4</td>
+      <td class="center">Cell 5</td>
       <td class="right">Cell 6</td>
     </tr>
     <tr>
